@@ -1,0 +1,530 @@
+/*!
+ * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+@media (max-width: 991px) {
+   .navbar-header {
+       float: none;
+   }
+   .navbar-toggle {
+       display: block;
+   }
+   .navbar-collapse {
+       border-top: 1px solid transparent;
+       box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+   }
+   .navbar-collapse.collapse {
+       display: none!important;
+   }
+   .navbar-nav {
+       float: none!important;
+       margin: 7.5px -15px;
+   }
+   .navbar-nav>li {
+       float: none;
+   }
+   .navbar-nav>li>a {
+       padding-top: 10px;
+       padding-bottom: 10px;
+   }
+   .navbar-text {
+       float: none;
+       margin: 15px 0;
+   }
+   /* since 3.1.0 */
+   .navbar-collapse.collapse.in {
+       display: block!important;
+   }
+   .collapsing {
+       overflow: hidden!important;
+   }
+} 
+body{margin-right: -2px;}
+
+p {
+    font-size: 16px;
+}
+
+p.small {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    color: #18bc9c;
+}
+
+@font-face{
+ font-family : "CHAWP";
+ src : url('../polices/chawp.otf');} 
+
+h2{color: #95D542;
+   font-family: "CHAWP";
+ padding-top: 20px;
+font-size: 30px;}
+h1,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color:#FFF;
+    text-align: center;
+}
+
+.lien{float: right;}
+
+
+header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+    padding-top: 60px;
+}
+
+header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+header .skills {
+    font-size: 1.40em;
+    font-weight: 300;
+}
+
+@media(min-width:768px) {
+    header .container {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    header .intro-text .name {
+        font-size: 3em;
+    }
+
+    header .intro-text .skills {
+        font-size: 1.75em;
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+.navbar-nav > li{ font-size: 10px;}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-inverse {
+    border: 0;
+}
+
+.navbar-default {
+    border: 0;
+    background-color: #44A8C5;
+    max-height: 80px;
+}
+
+section {
+    padding: 0px 0;
+    padding-top: px;
+
+}
+
+section.success {
+    color:#888991;
+}
+
+/*RESPONSIVE NAVBAR*/
+@media(max-width:991px) {
+  .navbar-nav ul {
+    border-radius: 10px 10px 10px 10px;
+  }
+  .navbar-nav  li a{
+    background-color: #44A8C5;
+    }
+  .navbar-nav li{
+    background-color: #95D542;
+  }
+  .navbar-nav li:hover{
+    color: red;
+  }
+  .navbar-nav{
+    border-radius: 10px;
+  }
+}
+
+/*END*/
+
+
+@media(max-width:991px) {
+    header {
+        height: 439px;
+    }
+}
+@media(max-width:767px) {
+    header {
+        height: 439px;
+    }
+}
+
+
+@media(max-width:767px) {
+    section {
+        padding: 59px 0;
+    }
+
+    section.first {
+        padding-top: 75px;
+    }
+}
+
+
+
+footer {
+    color: #fff;
+}
+
+footer h3 {
+    margin-bottom: 30px;
+}
+
+footer .footer-above {
+    padding-top: 50px;
+    background-color: #44A8C5;
+}
+
+footer .footer-col {
+    margin-bottom: 50px;
+}
+
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #233140;
+}
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active {
+    outline: 0;
+}
+
+.scroll-top {
+    z-index: 1049;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-top .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.scroll-top .btn:focus {
+    outline: 0;
+}
+
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+.quarante-huit p {
+    font-size: 60px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #FFF;
+    background-color: transparent;
+}
+.thumbnail {
+    height: 300px;
+    width: 260px;
+    margin-top: auto;
+    background-color:transparent;
+    
+
+}
+.thumbnail > p{font-size: 16px;
+                text-align:left;
+                color: #FCFFFF ;
+                margin-left: 12px;}
+.date{color: red;
+      padding-top: 30px;
+      position: absolute;
+      float: right;
+        z-index: 1
+        b}
+.image{
+       width: 80px;
+       height: 80px;}
+
+button.btn-primary.btn-lg{
+                        width: 250px;
+                        margin-top: 50px;
+                        background-color: #FFAF16;}
+/*.img-responsive{
+                height: 500px;
+                width: 600px;}*/
+.jumbotron{
+           margin-right: 50px;
+           margin-right:50px; }
+#prentation{
+        padding-top: 45px;
+}
+.jumbotron >p{
+              font-style: Calibri;
+              font-size: 20px;
+            }
+#th1{background-color: #BE212D;}
+#th2{background-color: #95D542;}
+#th3{background-color: #43A8C4;}
+
+
+.da{float: left;}
+#cadre{padding-top: 40px;}
+#usb{
+    float:left;
+    height: 350px;
+    width: 130px;
+    margin-top: 79px;}
+.dat{float: right;
+      margin-right: 0px;
+      padding-top: 0px;
+      }
+.skills{padding-top: 10px;}
+#participants{  padding-top: 45px;
+                background-color: aliceblue;
+                width:auto;
+    
+     }
+
+
+.plus{
+       padding: 20px;
+       margin-top: 70px;
+       
+   }
+.vache{width: 200px;
+       height:50px;}
+#chateau{ 
+        width: 270px;
+        height: 150px;}
+.par{
+      width: 140px;
+      padding: 10px;
+}
+#mentors{padding-top: 45px;
+         padding-bottom: 30px;
+}
+#infos{padding-top: 45px;
+  padding-bottom: 30px;
+}
+#participants{padding-top: 45px;
+  padding-bottom: 30px;
+}
+#programme{
+         background-color: #C95F67;
+         padding-top: 45px;
+         padding-bottom: 30px;
+}
+#prix{
+      background-color: #95D542;
+      padding-top: 45px;
+      padding-bottom: 30px;
+}
+#partenaires{background-color: #FFDAD2;
+             padding-top: 45px;
+           padding-bottom: 30px;}
+                 
+#contact{background-color:#44A8C5; 
+         padding-top: 45px;
+       padding-bottom: 30px;}
+#podi{
+    width: 400px;
+    height: 250px;
+    }
+#plaq{width: 200px;
+      height: 150px;
+      margin-left: 100px;
+    }
+
+.barre-verticale{
+    width: 2px;
+    height: 228px;
+    background-color: #000;
+    display: inline;
+    z-index: 2;
+    margin-left:61px;
+    position: absolute;
+}
+.tracteurs{
+            display: inline;
+}
+.tract{width: 30px;
+       height: 30px;
+       z-index: 3;
+       position: absolute;}
+#btnins{   width: 176px;
+          height: 44px;
+          padding-top: 10px;
+          font-size: 17px;
+}
+
+#bas{background-color: #327C91;}
+input{float: left;
+       display: inline-block;
+       font-weight: normal;
+       color: #000;
+     }
+input#prenom{color: #000;
+}
+label{
+    font-family: "Open Sans",sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    width: 150px;
+    float: left;
+}
+#accueil{background-color: #fff;
+          height: 650px;}
+textarea{
+  color: #000;
+}
+.test{float:left;
+      margin-right:70px;
+     }
+
+.formulaire{
+  width: 230px;
+  height: 250px;
+ 
+}
