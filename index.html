@@ -1,6 +1,12 @@
+<!--
+
+Developped by Maxime Freland (Web Developper and Growth Hacker at Wild Code School)
+Based from Mhamdi Naziha's project
+        http://www.doyoubuzz.com/naziha-mhamdi
+
+-->
 <!DOCTYPE html>
 <html lang="fr"style="width:auto">
-
 <head>
 
     <meta charset="utf-8">
@@ -21,6 +27,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/logo_blanc.png" type="image/x-icon">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,10 +36,22 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+<!-- GOOGLE ANALYTICS -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-57452863-4', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
 </head>
 
 <body >
-
+<div id="top"></div>
     <!-- Navigation -->
    <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -44,309 +63,213 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#inscription" style="font-size:14px;background-color:#FFAF16" >
-                    Je m'inscris
-                    </button>
+          <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#inscription" style="font-size:14px;" >Je m'inscris</button>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="lien">
-                 <a href="#participants">Participants</a>
+              <a class="hvr-underline-reveal" href="index.html">Accueil</a>
             </li>
             <li class="lien">
-                <a href="#mentors">Mentors</a>
+              <a class="hvr-underline-reveal" href="#participants">Participants</a>
             </li>
             <li class="lien">
-                <a href="#programme">Programme</a>
+              <a class="hvr-underline-reveal" href="#programme">Programme</a>
             </li>
             <li class="lien">
-                <a href="#prix"> Prix</a>
+              <a class="hvr-underline-reveal" href="#prix"> Prix</a>
             </li>
             <li class="lien" >
-                <a href="#infos">Infos pratiques</a>
-            </li>
-             <li class="lien">
-                <a href="#partenaires">Partenaires</a>
+              <a class="hvr-underline-reveal" href="#infos">Infos pratiques</a>
             </li>
             <li class="lien">
-                <a href="#contact">Contact</a></li>
+              <a class="hvr-underline-reveal" href="#contact">Contact</a>
+            </li>
+            <li class="lien">
+              <a class="hvr-underline-reveal" href="hackathon-06-15/index.html">/ Hackathon passé</a>
+            </li>
           </ul>
-          
         </div><!--/.nav-collapse -->
+        <img class="float-right" src="img/logo_blanc.png" alt="Wild Code School">
       </div>
     </nav>
-<header>
-     
-    <div >
-        <img src="img/accu.png" class="img-responsive" alt="Img presentation">
-    </div>
-           
 
-     
+<header>
+  <div >
+      <img src="img/headerseineetmarne2.jpg" class="img-responsive" alt="Img presentation">
+  </div>
     <!-- Header -->
 </header>
 
     <!-- Portfolio Grid Section -->
 <section id="presentation">    
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Présentation</h2>
-                    <img src="img/tracte.png" >
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-1"  id="test">
-                    <h5 style="color:#327C91"> Un Hackathon, <br>c'est quoi?</h5>
-
-                    <p>
-                        Prenez des codeurs, des designers, des graphistes.<br>
-                        Ajoutez une poignée de projets.<br>
-                        Mélangez le tout, faites bouillonner, mitonner, mijoter, pendant 48 heures.<br>
-                        N'oubliez pas une bonne dose de café. <br>
-                        Et vous obtiendrez des applications et des sites web.
-
-                    </p>
-                </div>
-                <div class=" col-md-offset-2 col-md-4" id="test1">
-                    <h5 style="color:#327C91"> Un projet E-AGRICULTURE,<br> C'est quoi?</h5>
-                    <p> 
-                        C'est un projet où les nouvelles technologies 
-                        se mettent au service de l'agriculture en optimisant 
-                        la gestion des productions.<br>
-                        Une réunion sera organisée en amont du hackathon afin de vous aider 
-                        à définir vos idées.</p>
-                            
-                </div>
-            </div>
-        </div>
-</section>
-<!-- session qui -->
-<section id="participants">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Participants</h2>
-                <img src="img/tracte.png" >
-            </div>
-            <div class="col-sm-4 col-md-3">
-                <div class="thumbnail" id="th1" >
-                    <img  src="img/agriculteur.png" class="image"/>
-                    <h5>J'ai un projet</h5>
-                    <p>Vous avez une idée, un projet numérique pour cultiver, élever, récolter... Vous voulez révolutionner les champs de l'agriculture.</p> 
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-1">
-                <div class="plus img-responsive">
-                    <img src="img/plu_vert.png">
-                </div>
-            </div>
-
-            <div class="col-sm-4 col-md-3">
-                <div class="thumbnail" id="th2">
-                    <img src="img/geek.png" class="image"/>
-                    <h5>Je sais coder, dessiner,<br> mettre en page</h5>
-                    <p>Vous êtes développeur, graphiste, webmarketeur, hyper vitaminé et motivé.
-                </div>
-            </div>
-            <div class="col-sm-3 col-md-1">
-                <div class="plus img-responsive"> 
-                    <img src="img/plus_bleu.png" >
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail" id="th3">
-                    <img  src="img/debout.png" class="image"/>
-                    <h5>J'aime ce projet</h5>
-                    <p>Vous aimez l'idée du hackathon, vous avez envie de soutenir une idée révolutionnaire, vous avez un peu d'argent, des radis, du cochon grillé, du café.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center"> 
-                 <img src="img/egal_orange.png">
-            </div>
-        </row>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <button type="button"  class="btn btn-default btn-lg" data-toggle="modal" data-target="#inscription" id="insc" style="background-color:#FFAF16">
-                INSCRIVEZ-VOUS</button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Montors-->
-<section id="mentors">
   <div class="container">
     <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Mentors</h2>
-                     <img src="img/tracte.png" >
-                </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="./img/axe.jpeg" class="img-circle center-block" style= "width:150px">
-                    <h5 style="color:#327C91">Axelle Lemaire </h5>
-                    <p>Secrétaire d’État chargée du numérique. Le hackathon est placé sous son Haut Patronage. </p>
-                </div>
-                <div class="col-md-3"  >
-                  <img src="./img/ouss150.jpeg"   class="img-circle center-block">
-                  <h5 style="color:#327C91">Oussama Ammar</h5>
-                  <p>
-                   A 12 ans, il ouvre son agence web. Plus tard, il cofonde TheFamily, un incubateur investisseur, coach et tremplin pour les startups. Il est aussi enseignant à Sciences Po Paris.</p>
-                </div>
-                 <div class="  col-md-3" >
-                    <img src="./img/hpillaud150.jpeg" class="img-circle center-block">
-                    <h5 style="color:#327C91">Hervé Pillaud</h5>
-                    <p> Agriculteur en Vendée et passionné par le Web 2.0, il est devenu un « a-geek –culteur »... Il voit le numérique comme une évolution inéluctable où l’on choisit d’être acteur ou spectateur.</p>
-                </div> 
-               
-                <div class=" col-md-3" >
-                    <img src="./img/Eric.png" class="img-circle center-block" style= "width:150px">
-                    <h5 style="color:#327C91">Éric GERARD</h5>
-                     <p> Maire de La Loupe et président de la Communauté de Communes des    Portes du Perche.
-                    
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3"  >
-                  <img src="./img/remitoisier.png"   class="img-circle center-block" style= "width:150px;height: 150px;">
-                  <h5 style="color:#327C91">Rémi Toisier</h5>
-                  <p>
-                   Homme d'action et de "terrain", il est en charge de l'économie numérique et du développement des usages pour la Région Centre au sein du GIP RECIA.</p>
-                </div>
-                <div class="col-md-3"  >
-                  <img src="./img/gauthier.jpeg"   class="img-circle center-block" style= "width:150px;height: 150px">
-                  <h5 style="color:#327C91">Pascal Gauthier</h5>
-                  <p>
-                   Co-fondateur d’Utcha, une équipe de passionnés, regroupant des professionnels chevronnés : designeurs graphique, auteurs de jeu, réalisateurs multimédia, infographistes 3D et ingénieurs de haut vol..</p>
-                </div>
-                <div class="col-md-3"  >
-                  <img src="./img/marie.jpg"   class="img-circle center-block" style= "width:150px;height: 150px">
-                  <h5 style="color:#327C91"> Marie-Gabrielle Favé</h5>
-                  <p>
-                    Membre actif d’OuiShare, un accélérateur d’idées et de projets dédié à l’émergence de la société collaborative.
-                  </p>
-                </div>
-                <div class="col-md-3"  >
-                      <img src="./img/wainstain.jpg"   class="img-circle center-block" style= "width:150px;height: 150px">
-                      <h5 style="color:#327C91"> Jérémie Wainstain</h5>
-                      <p>
-                        Entrepreneur du Web depuis 1997, il est actuellement CEO de
-                        TheGreenData, société spécialisée dans la Big Data agricole. Il est aussi
-                        mentor à l'Ecole Polytechnique.
-                      </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3"  >
-                  <img src="./img/william.jpg"   class="img-circle center-block" style= "width:150px;height: 150px;">
-                  <h5 style="color:#327C91">Wiliam Van de Boek</h5>
-                  <p>
-                    Co-fondateur de Mutinerie Village, espace de coworking à la
-                    campagne.</p>
-                </div>  
-            
-                 <div class="col-md-3"  >
-                      <img src="./img/maees.JPG"   class="img-circle center-block" style= "width:150px;height: 150px;">
-                      <h5 style="color:#327C91">Éric Maes</h5>
-                      <p>
-                        Directeur des relations avec les territoires chez Orange.
-                      </p>
-                </div> 
-                 <div class=" col-md-3" >
-                    <img src="./img/DidierAgez.jpg" class="img-circle center-block" style= "width:150px">
-                    <h5 style="color:#327C91">Didier Agez</h5>
-                    Directeur de la Chambre d'Agriculture d'Eure-et-Loir, il connait parfaitement le monde agricole, ses besoins, ses outils. Il sait que la profonde mutation que vit ce secteur passe par le numérique.
-                    </p>
-                </div> 
-                <div class="col-md-3"  >
-                  <img src="./img/guilhem-cheron.jpg"   class="img-circle center-block" style= "width:150px;height: 150px;">
-                  <h5 style="color:#327C91">Guilhem Cheron</h5>
-                  <p>
-                    Cofondateur de La Ruche qui dit oui !, un service web qui favorise les échanges directs entre producteurs locaux et consommateurs</p>
-                </div>  
-            </div>
-            <div class="row">
-                <div class="col-md-3"  >
-                  <img src="./img/AurelieBeaupel.jpg"   class="img-circle center-block" style= "width:150px;height: 150px;">
-                  <h5 style="color:#327C91">Aurélie Beaupel</h5>
-                  <p>
-                    Se revendique fervent défenseur de la liberté d'apprendre autrement. Maitre d'oeuvre des agreen'start'up, enseignante à l'université de Nantes...</p>
-                </div>  
-                <div class="col-md-3"  >
-                  <img src="./img/EricGOUIN.jpg"   class="img-circle center-block" style= "width:150px;height: 150px;">
-                  <h5 style="color:#327C91">Éric GOUIN</h5>
-                  <p>
-                    CEO de Pentalabbs, accélérateur de startups en Services for Equity, Eric Gouin a notamment été au service de Pentalog, spécialiste de l’outsourcing informatique, durant plus de 15 ans.</p>
-                </div>  
-            </div>
-
+      <div class="col-lg-12 text-center">
+        <h2>Présentation</h2>
+        <img src="img/tourist-line.png" >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-1"  id="test">
+        <h5> Un Hackathon, <br>c'est quoi?</h5>
+        <p class="text-center">
+          Prenez des codeurs, des designers, des graphistes.<br>
+          Ajoutez une poignée de projets.<br>
+          Mélangez le tout, faites bouillonner, mitonner, mijoter, pendant 48 heures.<br>
+          N'oubliez pas une bonne dose de café. <br>
+          Et vous obtiendrez des applications et des sites web.
+        </p>
+      </div>
+      <div class=" col-md-offset-2 col-md-4" id="test1">
+        <h5> Un projet E-TOURISME,<br> C'est quoi?</h5>
+        <p class="text-center">
+          C'est un projet où les nouvelles technologies 
+          se mettent au service du tourisme en créant des applications innovantes.<br>
+          Une réunion sera organisée en amont du hackathon afin de vous aider 
+          à définir vos idées.
+        </p>      
+      </div>
+    </div>
+  </div>
 </section>
+
+<section id="participants">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Participants</h2>
+        <img src="img/tourist-line.png" >
+      </div>
+      <div class="participant">
+  
+        <div class="col-s-6 col-sm-4 col-md-4">
+          <div class="thumbnail" id="th1" >
+            <img  src="img/debout.png" class="image"/>
+            <h5>J'ai un projet</h5>
+            <p>Vous avez une idée, un projet numérique, vous voulez révolutionner le domaine du tourisme.</p> 
+          </div>
+        </div>
+        <div class="col-s-6 col-sm-4 col-md-4">
+          <div class="thumbnail" id="th2">
+            <img src="img/geek.png" class="image"/>
+            <h5>Je sais coder, dessiner,<br> mettre en page</h5>
+            <p>Vous êtes développeur, graphiste, webmarketeur, hyper vitaminé et motivé.
+          </div>
+        </div>
+        <div class="col-s-12 col-sm-4 col-md-4">
+          <div class="thumbnail" id="th3">
+            <img  src="img/photographe.png" class="image"/>
+            <h5>J'aime ce projet</h5>
+            <p>Vous aimez l'idée du hackathon, vous avez envie de soutenir une idée révolutionnaire, vous avez un peu d'argent, faire connaître vos produits, du café, de pizzas.</p>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- End .row -->
+    <div class="row">
+      <div class="col-lg-12 text-center egal"> 
+          <img src="img/egal_orange.png">
+      </div>
+    </row>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <button type="button"  class="btn btn-default btn-lg" data-toggle="modal" data-target="#inscription" id="insc" style="background-color:#FFAF16">
+        INSCRIVEZ-VOUS</button>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!--Programme-->
 <section id="programme">
-    <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Programme</h2>
-                    <img src="img/tracte.png" >
-                </div>
-            
-        
-                <div class="col-md-4 "  id="test">
-                    <img src="img/planning-hackathon.png" >
-                </div>
-            
-                 <div class=" col-md-offset-3 col-md-4" id="test1" style="padding-top:20px">
-                    <h5>Hackathon e-agriculture</h5>
-                    <h6>Château de La Loupe<br>
-                    Rue du Château<br>28240 LA LOUPE</h6>
-                   <a target="_blank" class="btn btn-default" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Wild+Hackathon+by+WCS&amp;dates=20150612T170000Z/20150614T143000Z&amp;details=Hackathon e-agriculture, pour plus détails sur www.wildhackathon.fr&amp;location=Salle+des+fêtes,+28240+La+Loupe&amp;pli=1&amp;sf=true&amp;output=xml#eventpage_6"
-                   role="button" style="background-color:#44A8C5;margin-left:68px"> Ajouter à mon agenda</a>
-                     
-                </div> 
-            </div>
-        
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Programme</h2>
+        <img src="img/tourist-line.png" >
+      </div>
+      <div class="col-md-6 col-md-offset-3" id="timeline">
+        <div class="row">
+          <div class="icon">
+            <img src="img/tourist.png" alt="Logo E-Tourisme">
+          </div>
+          <p>Vendredi 8 Juillet</p>
+        </div>
+        <div class="row">
+          <ul>
+            <li>19h00 - Accueil<br/>
+            <i>Inscriptions, badges, pochettes participants, autorisation photos, ...</i></li>
+            <li>19h30 - Ouverture discours</li>
+            <li>20h00 - Pitch des projets<br/>
+            <i>10 équipes x 3 minutes</i></li>
+            <li>21h00 - Cocktail et constitution des équipes</li>
+            <li>22h00 - Enregistrement des équipes<br/>
+            <i>Visite du site, installation des équipes et début des travaux</i></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="icon">
+            <img src="img/tourist.png" alt="Logo E-Tourisme">
+          </div>
+          <p>Samedi 9 Juillet</p>
+        </div>
+        <div class="row">
+          <ul>
+            <li>9h00 - Petit-déjeuner</li>
+            <li>9h30 - Pitch des mentors<br/>
+            <i>2 minutes par mentors pour se présenter</i></li>
+            <li>15h00 - Présentation des projets à mi-parcours<br/>
+            <i>3 minutes, questions publiques des mentors, échange</i></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="icon">
+            <img src="img/tourist.png" alt="Logo E-Tourisme">
+          </div>
+          <p>Dimanche 10 Juillet</p>
+        </div>
+        <div class="row">
+          <ul>
+            <li>15h00 - Présentation finale des projets<br/>
+            <i>3 minutes par équipe</i></li>
+            <li>16h00 - Délibération du jury</li>
+            <li>16h30 - Remise des prix</li>
+            <li>17h00 - Clôture</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-md-offset-3 adresse-prog">
+        <div class="content-calendar">
+          <h5>Hackathon e-tourisme</h5>
+          <h6>Comité départemental du tourisme Seine-et-Marne<br>
+          Quartier Henri IV, Place d’Arme<br>
+          77300 Fontainebleau</h6>
+          <a target="_blank" class="btn btn-default" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Wild+Hackathon+-+E-Tourisme+-+by+WCS&amp;dates=20150907T170000Z/20161007T150000Z&amp;details=Hackathon E-Tourisme, pour plus détails sur www.wildhackathon.fr&amp;location=Quartier+Henri+IV,+Place+d'Arme,+77300+Fontainebleau&amp;pli=1&amp;sf=true&amp;output=xml#eventpage_6" role="button"> Ajouter à mon agenda</a>
+        </div>
+      </div> 
     </div>
+  </div>
 </section>
 
 <!-- Prix-->
 <section id="prix">
   <div class="container">
     <div class="row">
-        <div class="col-lg-12 text-center">
-            <h2 style="color:#327C91">Qu'est-ce qu'on gagne ?</h2>
-             <img src="img/tracte.png" >
-        </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 ">
-        <ul>
-          <li>Premier prix : 3 000 €.</li>
-          <br>
-          <p>Autre Prix : </p>
-          <li> La société Orange récompensera la seconde équipe
-            lauréate par un Ipad Mini Air 24 G neuf sans abonnement 64GO d’une valeur environ de 500 €.</li>
-          <br>
-          <li> Les écuries de St-Victor, centre équestre à Saint-Victor-de-Buthon offrent une balade en calèche pour 4 personnes dans les collines du Perche.</li>
-          <br>
-          <li> La société PEP's concept offre un prix d'une valeur de 1500€ HT à savoir 6 mois de location offert pour toute entreprise créée dans l’année et domiciliée dans les locaux de PEP's à la Loupe (bureau loué vide,   accès internet,  téléphone,  accès à notre club d’affaire,  centrale d’achat,  comité d’entreprise).</li>
-          <br>
-          <li>La société O2 offre un package d'heures de ménage (2h de ménage – repassage valable sur les zones couvertes par la groupe o2) 
-          </li>
-          <br>
-          <li>1 journée au Château des Hauts, siège social de Pentalabbs, en compagnie d'Eric GOUIN et d'autres tacticiens expérimentés afin de définir le business model.</li>
-          <br>
-          <li>Un panier garni de produits offert par l'association "Terre d'Eure-et-Loir" et l'Auberge "au cochon grillé" de Meaucé.
-          </li> <br>
-          <li>D’autres prix pourront également être proposés par nos partenaires (goodies, accompagnement,...)</li>
-          </ul>
+      <div class="col-lg-12 title text-center">
+        <h2>Qu'est-ce qu'on gagne ?</h2>
+        <img src="img/tourist-line.png" >
       </div>
-      <div class="col-md-6 text-center">
-          <img src="img/plaque.png" id="plaq" class="img-responsive"  >
-          <img src="img/podium.png" id="podi" class="img-responsive" >
+    </div>
+    <div class="row content">
+      <div class="col-md-offset-3 col-md-4 ">
+        <img src="img/podium.png" alt="">
+      </div>
+      <div class="col-md-4 description col-md-offset-1">
+        <p><b>1er prix :</b> Montant en numéraire pour l’équipe lauréate</p>
+        <p><b>2ème prix :</b> A déterminer</p>
+        <p><b>3ème prix :</b> Entrées offertes pour le château de Fontainebleau</p>
+        <p><b>Autres prix :</b> Entrées offertes et livres</p>
       </div>
     </div>
   </div>
@@ -354,127 +277,106 @@
 
 <!-- Infos pratiques -->
 <section  id="infos">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Infos pratiques</h2>
-                     <img src="img/tracte.png" >
-                </div>
-            </div>
-             <div class="row">
-                <div class="col-md-offset-1 col-md-4" id="test1">
-                    <h5 style="color:#327C91;text-align:center">Lieu</h5>
-
-                    <p> Un lieu insolite pour un évènement insolite : un comice agricole. Les participants du hackathon réaliseront leurs projets au milieu d’une ferme géante, dans un cadre de verdure.
-                    </p>
-                </div>
-                <div class="col-md-offset-2 col-md-5">
-                     <img src="img/chateau.jpg" id="chateau">
-                     
-                     
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <iframe src="https://mapsengine.google.com/map/embed?mid=z0EUsTsqB-hw.ksBCxNrP3p2Y" width="100%" height="480"></iframe>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Questions - Réponses</h2>
-                     <img src="img/tracte.png" >
-                </div>
-                <div class="col-md-4 col-md-offset-1"  id="test">
-                    <h5 style="color:#327C91;text-align:left">Combien ça coûte ?</h5>
-                        <p>C’est gratuit pour les participants.<p>
-                    <br>
-                     <h5 style="color:#327C91;text-align:left">J’ai plein d’argent, je ne sais pas quoi en faire?</h5>
-                        <p>Il y a plein de solutions pour soutenir notre projet. Vous pouvez par exemple sponsoriser un prix et il portera votre nom, parrainer le hackathon, nous donner des gâteaux, de la nourriture, des objets... que nous pourrons offrir aux participants. Contactez-nous, nous trouverons ensemble une solution...</p>
-
-                   
-                </div>
-                <div class="col-md-offset-2 col-md-4 "  id="test"> 
-                  <h5 style="color:#327C91;text-align:left">J’ai un projet, je veux participer, je fais comment ?</h5>
-                    <p>Inscrivez-vous sur notre site en cliquant sur le bouton "Je m'inscris". Nous vous recontacterons très rapidement pour définir ensemble les détails de votre venue.
-                    </p>
-
-                    
-
-                    <h5 style="color:#327C91;text-align:left">Qu’est-ce que j’apporte ?</h5>
-                   <p>Votre ordinateur pour travailler, votre sac de couchage et éventuellement un tapis de sol pour dormir, du nécessaire de toilette... Tous les participants officiellement inscrits seront logés (lits de camps) et nourris sur place du vendredi soir au dimanche midi.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Outils</h2>
-                     <img src="img/tracte.png" >
-                </div>
-            </div>
-                <div class="row">
-                <div class="col-md-12 text-center"  id="test">
-                    <div class="col-md-4 col-md-offset-1"  id="test">
-                       <p style="text-align:left;">
-                            L'inscription au hackathon e-agriculture vaut acceptation du règlement. Téléchargez le.
-                             <br><br>
-                             Vous souhaitez parler ou faire parler de notre évènement ? Excellente idée :)<br> Nous vous proposons en téléchargement le communiqué de presse, le flyer de promotion et un visuel. N'hésitez pas à nous contacter pour tout
-                        </p>
-                    </div>
-                    <div class="col-md-offset-2 col-md-4 "  id="test"> 
-                        <a target="_blank" class="btn btn-default" href="img/reglement.pdf" role="button" style="background-color:#44A8C5;margin-left:68px; width:175px">Réglement</a><br><br><br>
-                        <a target="_blank" class="btn btn-default" href="img/presse.pdf" role="button" style="background-color:#44A8C5;margin-left:68px; width:175px ">Communiqué de presse</a><br><br>
-                        <a target="_blank" class="btn btn-default" href="img/flyer.pdf" role="button" style="background-color:#44A8C5;margin-left:68px; width:175px ">Flyer de Promotion</a><br><br>
-                        <a target="_blank" class="btn btn-default" href="img/visuel.jpg" role="button" style="background-color:#44A8C5;margin-left:68px; width:175px "download="CreativeJuiz_Background">Visuel</a>
-
-                    </div> 
-                </div>
-                
-
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Infos pratiques</h2>
+        <img src="img/tourist-line.png" >
+      </div>
+    </div>
+    <div class="row detail">
+      <div class="col-md-offset-1 col-md-5" id="test1">
+        <h5>Lieu</h5>
+        <p>
+        Comité départemental du tourisme Seine-et-Marne<br/>
+        Quatier Henri IV, Place d'Arme <br/>
+        77300 Fontainebleau
+        </p>
+        <p>Tél. : 01 60 39 60 39</p>
+      </div>
+      <div class="col-md-offset-1 col-md-5">
+        <div class="img-center">
+          <img src="img/chateau2.jpg" id="chateau">
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1DJEkA6fSSGvk-ZJ6I2WWQSAx8kY"></iframe>
+      </div>
+    </div>
+    <div class="row detail2">
+      <div class="col-lg-12 text-center">
+        <h2>Questions - Réponses</h2>
+        <img src="img/tourist-line.png" >
+      </div>
+      <div class="col-md-4 col-md-offset-1"  id="test">
+        <h5>Combien ça coûte ?</h5>
+        <p>C’est gratuit pour les participants.</p>
+        <br/>
+        <h5>J’ai plein d’argent, je ne sais pas quoi en faire?</h5>
+        <p>Il y a plein de solutions pour soutenir notre projet. Vous pouvez par exemple sponsoriser un prix et il portera votre nom, parrainer le hackathon, nous donner des gâteaux, de la nourriture, des objets... que nous pourrons offrir aux participants. Contactez-nous, nous trouverons ensemble une solution...</p>
+      </div>
+      <div class="col-md-offset-2 col-md-4 "  id="test"> 
+        <h5>J’ai un projet, je veux participer, je fais comment ?</h5>
+        <p>Inscrivez-vous sur notre site en cliquant sur le bouton "Je m'inscris". Nous vous recontacterons très rapidement pour définir ensemble les détails de votre venue.</p>
+        <h5>Qu’est-ce que j’apporte ?</h5>
+        <p>Votre ordinateur pour travailler, votre sac de couchage et éventuellement un tapis de sol pour dormir, du nécessaire de toilette... Tous les participants officiellement inscrits seront logés et nourris sur place du vendredi soir au dimanche midi.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Outils</h2>
+        <img src="img/tourist-line.png" >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="col-md-4 col-md-offset-1">
+          <p style="text-align:left;">
+            L'inscription au hackathon e-tourisme vaut acceptation du règlement. Téléchargez le.
+          <br/><br/><br/>
+            Vous souhaitez parler ou faire parler de notre évènement ? Excellente idée.<br> Nous vous proposons en téléchargement le communiqué de presse, le flyer de promotion et un visuel. N'hésitez pas à nous contacter pour tout.
+          </p>
+        </div>
+        <div class="col-md-offset-2 col-md-4 utils-btn"> 
+          <a target="_blank" class="btn btn-default" href="files/REGLEMENTDUCONCOURS-Hackathon.pdf" role="button">Règlement</a><br><br><br>
+          <a target="_blank" class="btn btn-default" href="files/Dossier de présentation Hackathon v2.pdf" role="button">Communiqué de presse</a><br><br>
+          <!--<a target="_blank" class="btn btn-default" href="img/flyer.pdf" role="button">Flyer de Promotion</a><br><br>-->
+          <a target="_blank" class="btn btn-default" href="img/headerseineetmarne2.png" role="button" download="Visuel-Hackathon-Wild-Code-School-E-Tourisme">Visuel</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
     
 <!-- Partenaires -->
 <section id="partenaires">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Partenaires</h2>
-                 <img src="img/tracte.png" >
-            </div>
-        </div>
-
-    <div class="container">
-        <div class="row">
-            <ul class="list-inline  text-center">
-                <li><img src="img/mecene.png" class="par"></li>
-                <li><img src="img/WCS_nb.png" class="par"></li>
-                <li><img src="img/patronage.jpg" class="par"></li>
-                <li><img src="img/centrevaldeloire_nb.png" class="par"></li>
-                <li><img src="img/eure.jpg" class="par"></li>
-                <li><img src="img/paysperche28.png" class="par" ></li>
-                <li><img src="img/CDCporteperche_nb.png" class="par"></li>
-                <li><img src="img/ville_laloupe_nb.png" class="par"></li>
-                <li><img src="img/msa.png" class="par"></li>
-                <li><img src="img/leap.jpg" class="par"></li>
-                <li><img src="img/chbreagri_nb.png" class="par"></li>
-                <li><img src="img/agro.jpg" class="par"></li>
-                <li><img src="img/saint victor.jpg" class="par" ></li> 
-                <li><img src="img/logo cm nbi.jpg" class="par" ></li> 
-                <li><img src="img/peps.jpg" class="par"></li>  
-                <li><img src="img/o2.png" class="par"></li> 
-                <li><img src="img/cfete.jpg" class="par"></li>  
-                <li><img src="img/ca.jpg" class="par"></li> 
-                <li><img src="img/pcsoft.jpg" class="par"></li> 
-                <li><img src="img/terre.png" class="par"></li>    
-                <li><img src="img/cochon.jpg" class="par"></li>    
-                <li><img src="img/orange.jpg" class="par"></li>    
-
-            </ul>
-        </div>
-            
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Partenaires</h2>
+        <img src="img/tourist-line.png" >
+      </div>
     </div>
+
+  <div class="container">
+    <div class="row partner">
+      <div class="col-sm-offset-3 col-sm-6">
+        <img src="img/seine-et-marne-tourisme.jpg">
+      </div>
+      <div class="col-sm-4">
+        <img src="img/ccpf.png">
+      </div>
+      <div class="col-sm-4">
+        <img src="img/cci-seine-et-marne.jpg">
+      </div>
+      <div class="col-sm-4">
+        <img src="img/fontainebleau-castle.jpg">
+      </div>
+    </div>
+          
+  </div>
 </section>
 
 
@@ -482,55 +384,41 @@
 
 <!-- Footer -->
 <section id="contact">
-    <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact</h2>
-                     <img src="img/tracte.png" >
-                </div>
-            </div>
-        <footer class="text-center">
-            <div class="footer-above">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            
-                            <h6>Wild Code School :<br> l’école numérique de La Loupe</h6>
-                            <p>18 Rue de La gare,<br>28240 La Loupe <br>
-                           
-                            <a href="https://www.wildcodeschool.fr/" style="color:aliceblue">Wild Code School </a>
-                            </p>
-                            <ul class="list-inline">
-                                <li>
-                                    <a href="https://www.facebook.com/wildcodeschool?fref=ts" class="btn-social btn-outline" style="color:#FFF"><i class="fa fa-fw fa-facebook"></i></a>
-                                </li>
-                                
-                                <li>
-                                    <a href="https://twitter.com/WildCodeSchool" class="btn-social btn-outline" style="color:#FFF"><i class="fa fa-fw fa-twitter"></i></a>
-                                </li>   
-                            </ul>
-                            <h5> <a href="mailto:caroline@wildcodeschool.fr" style="color:#fff">Contactez-Nous</A>
-                        </div>
-                       
-                    </div>
-                </div> <!--row-->
-                
-            </div>
-        </footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Contact</h2>
+        <img src="img/tourist-line.png" >
+      </div>
     </div>
+    <footer class="text-center">
+      <div class="footer-above">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h5>Wild Code School</h5>
+              <p>Les Mines Paris Tech<br>
+              35 Rue Saint Honoré<br>
+              77300 Fontainebleau<br/><br/>
+              <a href="https://www.wildcodeschool.fr/" target="_blank">wildcodeschool.fr</a>
+              </p>
+              <ul class="list-inline">
+                <li>
+                  <a href="https://www.facebook.com/wildcodeschool?fref=ts" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/WildCodeSchool" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                </li>   
+              </ul>
+              <h5><a href="mailto:claire@wildcodeschool.fr" target="_blank">Contactez-Nous</a></h5>
+            </div>
+          </div> <!--row-->
+        </div> <!-- container --> 
+      </div>
+    </footer>
+  </div>
 </section>
-<section id="bas">
-    <div class="container">
-            
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            Site développé par <a href="http://www.doyoubuzz.com/naziha-mhamdi" >Mhamdi Naziha</a><br><a href="https://www.wildcodeschool.fr/" style="color:aliceblue">Wild Code School </a>
-                        </div>
-                    </div>
-                
-     </div>
-</section>
-    
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -559,10 +447,7 @@
             <h4 class="modal-title" id="myModalLabel">Modal title</h4>
           </div>
           <div class="modal-body">
-            <div style="width:100%; text-align:left;" >
-                <iframe  src="http://eventbrite.fr/tickets-external?eid=16140752425&ref=etckt" frameborder="0" height="398" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-                <div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" >
-                    <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.fr/r/etckt">Vendre des billets en ligne</a> <span style="color:#ddd;">à travers</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.fr?ref=etckt">Eventbrite</a></div></div>
+            <div style="width:100%; text-align:left;" ><iframe  src="http://eventbrite.fr/tickets-external?eid=25813734575&ref=etckt" frameborder="0" height="444" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #dddddd; text-decoration: none;" target="_blank" href="http://www.eventbrite.fr/r/etckt">Développé par Eventbrite</a></div></div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
