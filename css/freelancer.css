@@ -9,7 +9,10 @@
    margin-right: 0; 
    margin-left: 0; 
 }
-
+.row {
+   margin-left: 0px; 
+   margin-right: 0px; 
+}
 @media (min-width: 768px) {
   .container {
     width: auto;
@@ -94,27 +97,22 @@ h1, h3, h4, h5, h6 {
     color:#FFF;
     text-align: center;
 }
-
-img[src="img/tourist-line.png"] {
-  margin-bottom: 10px;
+h2 + img {
   max-width: 100%;
+  margin-bottom: 10px;
 }
-
 .lien{
   float: right;
 }
-
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
 }
-
 header img {
     display: block;
     margin: 0 auto 20px;
     padding-top: 60px;
 }
-
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
@@ -122,45 +120,40 @@ header .intro-text .name {
     font-size: 1.25em;
     font-weight: 700;
 }
-
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
 }
-
 header .skills {
     font-size: 1.40em;
     font-weight: 300;
 }
-
 @media(min-width:768px) {
-    header .container {
-        padding-top: 100px;
-        padding-bottom: 50px;
-    }
-
-    header .intro-text .name {
-        font-size: 3em;
-    }
-
-    header .intro-text .skills {
-        font-size: 1.75em;
-    }
+  header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  header .intro-text .name {
+    font-size: 3em;
+  }
+  header .intro-text .skills {
+    font-size: 1.75em;
+  }
 }
 
 @media(min-width:768px) {
-    .navbar-fixed-top {
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-    }
+  .navbar-fixed-top {
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+  }
 
-    .navbar-fixed-top .navbar-brand {
-        font-size: em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
+  .navbar-fixed-top .navbar-brand {
+    font-size: em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
 }
 
 .navbar {
@@ -482,7 +475,7 @@ footer .footer-below {
   margin-left: 0px;
 }
 #programme #timeline .row:last-child {
-  margin-left: 14px;
+  margin-left: 30px;
   width: 70%;
 }
 
@@ -516,13 +509,10 @@ footer .footer-below {
 #prix .container .row.content {
   vertical-align: middle;
 }
-#prix .description p:first-child {
-  /*font-weight: bold;*/
-  font-size: 18px;
-}
-#prix .description p:last-child {
-  font-size: 16px;
-}
+#prix .description p:nth-child(1){font-size: 22px;}
+#prix .description p:nth-child(2){font-size: 20px;}
+#prix .description p:nth-child(3){font-size: 18px;}
+#prix .description p:nth-child(4){font-size: 16px;}
 
 @media only screen and (max-device-width: 992px), (max-width: 992px) {
   #prix {
@@ -544,10 +534,10 @@ footer .footer-below {
   text-align: center;
 }
 #partenaires .container .row.partner img {
-  max-height: 250px;
+  max-height: 200px;
   width: auto;
   padding: 10px;
-  max-width: 100%;
+  max-width: 250px;
 }
 #partenaires .container .row.partner .col-sm-4{
   float:none;
